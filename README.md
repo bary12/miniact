@@ -15,7 +15,10 @@ const state = {
     next: 4
 };
 
+const Title = app => `<h1>You have ${app.state.items.length} items</h1>`;
+
 const MyComponent = app => `
+    ${Title(app)}
     <ul>
         ${app.state.items.map(item => `<li>item ${item}</li>`)}
     </ul>
