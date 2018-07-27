@@ -1,4 +1,4 @@
-rray.prototype.toString = function () {
+Array.prototype.toString = function () {
   return this.join('');
 };
 
